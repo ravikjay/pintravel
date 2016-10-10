@@ -1,0 +1,28 @@
+TODO:
+
+Stage 1:
+- Let them grab a place pin URL from Pinterest
+	easy, just get a URL from the website
+- GET the Pin, and specify on the Rich Pin Info
+	- ok so, here's the request to the API
+	https://api.pinterest.com/oauth/?
+    response_type=code&
+    redirect_uri=https://mywebsite.com/connect/pinterest/&
+    client_id=12345&
+    scope=read_public,write_public&
+    state=768uyFys
+
+- Extract the Info into a JSON
+- Use JSON to pull Kayak/Expedia Info
+	- we can search using latitude/longitude (this info is in the Rich Pin)
+	- for example: 
+		http://terminal2.expedia.com/x/mhotels/search?city=SEATTLE&checkInDate=2016-12-01&checkOutDate=2016-12-03&room1=2&apikey=INSERT_KEY_HERE
+	- 
+
+Stage 2:
+- Authenticate user
+- Get their boards/pins
+- Let user pick Place pin from the in the app
+
+
+

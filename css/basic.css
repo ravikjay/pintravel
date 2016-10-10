@@ -1,0 +1,17 @@
+body {
+  padding-top: 50px;
+}
+.basic {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+@font-face {
+	font-family: Pinterest;
+	src: url(../fonts/texgyrebonum-bolditalic.otf) format("opentype");
+}
+
+h1 {
+	font-family: Pinterest;
+	font-size: 60px;
+}
