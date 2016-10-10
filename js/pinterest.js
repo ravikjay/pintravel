@@ -1,3 +1,4 @@
+// Described Pinterest JS SDK here to get better understanding of abilities
 var Const = require('./const');
 
 // Initialize once with app id
@@ -34,6 +35,13 @@ var Pinterest = {
      */
     createPin: function(data, callback) {
         PDK.request('/pins/', 'POST', data, callback);
+    },
+    /*  Use SDK to GET a pin
+	 *	@param {Object} data 		- {pin ID}
+	 *	@param {Function} callback  - function is fired on completion
+     */
+    getPin: function(data, callback) {
+    	PDK.request('/pins/', 'GET', data, callback);
     },
     /*
      *  Use SDK to request current users boards

@@ -45,6 +45,23 @@
 
     <div class="container">
       <h2> Hi </h2>
+      <script type="text/javascript">
+        var params = {
+          fields: 'id,note,link,attribution,metadata'
+        };
+        var pins = [];
+        PDK.request('/pins/<pin>', function (response) {
+          if (!response || response.error) {
+            alert('Error!');
+          } else {
+            pins = pin.concat(response.data);
+            if (response.hasNext) {
+              response.next(); // will recursively go back to this call
+            }
+          }
+        });
+        for
+      </script>
     </div>
 
 
@@ -57,11 +74,11 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <!-- Pinterest Javascript SDK-->
+    <!-- Asynchronously add Pinterest Javascript SDK-->
     <script>
     window.pAsyncInit = function() {
         PDK.init({
-            appId: "<your app-id>", // Change this
+            appId: "<4861195153418758933>",
             cookie: true
         });
     };
