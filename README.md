@@ -5,7 +5,10 @@ Uses Pinterest REST API and OAuth2 to grab Rich Pins with Javascript
 
 ## Progress
 
-Still a work in progress.
+* Retrieving Rich Pin though GET call
+* Parsing Pin metadata for Place Pin latitude/longitude
+* Process metadata into usable location query
+* Form query into Expedia API GET call
 
 ## Built With
 
@@ -15,11 +18,11 @@ Still a work in progress.
 
 ## Authors
 
-* **Ravi Jayanthi** - *Initial work* - [ravikjay](https://github.com/ravikjay)
+* **Ravi Jayanthi** : [ravikjay](https://github.com/ravikjay)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License
 
 ## Acknowledgments
 
