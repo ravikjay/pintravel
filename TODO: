@@ -2,7 +2,10 @@ TODO:
 
 Stage 1:
 - Let them grab a place pin URL from Pinterest
-	easy, just get a URL from the website
+	- have user get a URL from the website
+	- provide an input field for the user to give the URL
+	- parse the URL and grab the Pin ID 
+- Use JS SDK to make the Request 
 - GET the Pin, and specify on the Rich Pin Info
 	- ok so, here's the request to the API
 	https://api.pinterest.com/oauth/?
